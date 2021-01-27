@@ -33,5 +33,10 @@ interface MarsApiService {
     @GET("realestate")
     fun getProperties():
             Call<String>
+}
 
+object MarsApi {
+    val retrofitService: MarsApiService by lazy {
+        retrofit.create(MarsApiService::class.java)
+    }
 }
