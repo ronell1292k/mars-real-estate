@@ -98,5 +98,5 @@ dependencies {
     implementation "com.google.android.material:material:$version_material"
 
     // Multidex
-    implementation "com.android.support:multidex:$version_multidex"
+    implementation "androidx.multidex:multidex:$version_multidex"
 }
