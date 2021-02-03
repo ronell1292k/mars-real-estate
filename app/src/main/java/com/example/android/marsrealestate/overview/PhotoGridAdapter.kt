@@ -17,5 +17,7 @@
 
 package com.example.android.marsrealestate.overview
 
+import androidx.recyclerview.widget.ListAdapter
+import com.example.android.marsrealestate.network.MarsProperty
 
 class PhotoGridAdapter : ListAdapter<MarsProperty, PhotoGridAdapter.MarsPropertyViewHolder>(DiffCallback) {}
