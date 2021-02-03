@@ -65,7 +65,7 @@ class OverviewViewModel : ViewModel() {
                 val listResult = getPropertiesDeferred.await()
                 _status.value = "Success: ${listResult.size} Mars properties retrieved"
                 if (listResult.size > 0) {
-                    _property.value = listResult[0]
+                    _properties.value = listResult[0]
                 }
             } catch (t: Throwable) {
                 _status.value = "Failure: " + t.message
