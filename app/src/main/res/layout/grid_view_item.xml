@@ -24,8 +24,8 @@
     <data>
 
         <variable
-            name="viewModel"
-            type="com.example.android.marsrealestate.overview.OverviewViewModel" />
+            name="property"
+            type="com.example.android.marsrealestate.network.MarsProperty" />
     </data>
 
     <ImageView
