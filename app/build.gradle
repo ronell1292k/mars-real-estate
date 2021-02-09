@@ -96,4 +96,7 @@ dependencies {
 
     // Material Components
     implementation "com.google.android.material:material:$version_material"
+
+    // LifeCycle
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
 }
