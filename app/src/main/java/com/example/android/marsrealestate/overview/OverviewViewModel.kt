@@ -83,4 +83,8 @@ class OverviewViewModel : ViewModel() {
         super.onCleared()
         viewModelJob.cancel()
     }
+
+    fun displayPropertyDetails(marsProperty: MarsProperty) {
+        _navigateToSelectedProperty.value = marsProperty
+    }
 }
