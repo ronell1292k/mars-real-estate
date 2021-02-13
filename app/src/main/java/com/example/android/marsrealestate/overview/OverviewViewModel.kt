@@ -29,9 +29,6 @@ import kotlinx.coroutines.launch
 
 enum class MarsApiStatus { LOADING, ERROR, DONE }
 
-/**
- * The [ViewModel] that is attached to the [OverviewFragment].
- */
 class OverviewViewModel : ViewModel() {
 
     // The internal MutableLiveData String that stores the status of the most recent request
@@ -52,16 +49,10 @@ class OverviewViewModel : ViewModel() {
     private var viewModelJob = Job()
     private val coroutineScope = CoroutineScope(viewModelJob + Dispatchers.Main)
 
-    /**
-     * Call getMarsRealEstateProperties() on init so we can display status immediately.
-     */
     init {
         getMarsRealEstateProperties()
     }
 
-    /**
-     * Sets the value of the status LiveData to the Mars API status.
-     */
     private fun getMarsRealEstateProperties() {
         coroutineScope.launch {
             var getPropertiesDeferred = MarsApi.retrofitService.getProperties()
