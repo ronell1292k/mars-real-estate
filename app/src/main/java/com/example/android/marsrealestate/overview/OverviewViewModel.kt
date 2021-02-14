@@ -83,4 +83,8 @@ class OverviewViewModel : ViewModel() {
     fun displayPropertiesComplete() {
         _navigateToSelectedProperty.value = null
     }
+
+    fun updateFilter(filter: MarsApiFilter) {
+        getMarsRealEstateProperties(filter)
+    }
 }
