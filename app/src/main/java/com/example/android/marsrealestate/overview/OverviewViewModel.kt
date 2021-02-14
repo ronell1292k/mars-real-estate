@@ -56,7 +56,7 @@ class OverviewViewModel : ViewModel() {
 
     private fun getMarsRealEstateProperties(filter: MarsApiFilter) {
         coroutineScope.launch {
-            var getPropertiesDeferred = MarsApi.retrofitService.getProperties()
+            var getPropertiesDeferred = MarsApi.retrofitService.getProperties(filter.value)
 
             try {
                 _status.value = MarsApiStatus.LOADING
