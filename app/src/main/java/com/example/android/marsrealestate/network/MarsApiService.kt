@@ -42,7 +42,7 @@ private val retrofit = Retrofit.Builder()
 
 interface MarsApiService {
     @GET("realestate")
-    fun getProperties(@Query("filter") type: String):
+    fun getPropertiesAsync(@Query("filter") type: String):
             Deferred<List<MarsProperty>>
 }
 
