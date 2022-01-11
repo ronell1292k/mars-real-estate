@@ -11,7 +11,7 @@ buildscript {
         version_constraint_layout = "2.1.2"
         version_glide = "4.12.0"
         version_kotlin = "1.6.10"
-        version_kotlin_coroutines = "1.5.2-native-mt"
+        version_kotlin_coroutines = "1.6.0-native-mt"
         version_lifecycle = "2.4.0"
         version_moshi = "1.13.0"
         version_navigation = "2.3.5"
