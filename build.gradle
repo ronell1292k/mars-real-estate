@@ -6,7 +6,7 @@ buildscript {
         // Versions for all the dependencies we plan to use. It's particularly useful for kotlin and
         // navigation where the versions of the plugin needs to be the same as the version of the
         // library defined in the app Gradle file
-        version_android_gradle_plugin = '8.0.0-alpha05'
+        version_android_gradle_plugin = '8.0.0-alpha08'
         version_core = "1.9.0"
         version_constraint_layout = "2.1.4"
         version_glide = "4.14.2"
